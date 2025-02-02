@@ -1,0 +1,40 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ZenlessZoneTracker.Api", "ZenlessZoneTracker.Api\ZenlessZoneTracker.Api.csproj", "{F0DB9F35-989C-4C09-9BD5-C02C16D3D459}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ZenlessZoneTracker.Application", "ZenlessZoneTracker.Application\ZenlessZoneTracker.Application.csproj", "{D51975EA-6BA1-4502-8FA3-2FBD14AA32ED}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ZenlessZoneTracker.Domain", "ZenlessZoneTracker.Domain\ZenlessZoneTracker.Domain.csproj", "{88E48658-4D1E-41AE-AD4F-B75CD78B97CF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ZenlessZoneTracker.Infrastructure", "ZenlessZoneTracker.Infrastructure\ZenlessZoneTracker.Infrastructure.csproj", "{87A12D4B-EF2F-4ADD-A84F-2EEE196EEBA7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ZenlessZoneTracker.Common", "ZenlessZoneTracker.Common\ZenlessZoneTracker.Common.csproj", "{33195C5A-BA98-4928-BD25-E784C5EC9473}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F0DB9F35-989C-4C09-9BD5-C02C16D3D459}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F0DB9F35-989C-4C09-9BD5-C02C16D3D459}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F0DB9F35-989C-4C09-9BD5-C02C16D3D459}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F0DB9F35-989C-4C09-9BD5-C02C16D3D459}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D51975EA-6BA1-4502-8FA3-2FBD14AA32ED}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D51975EA-6BA1-4502-8FA3-2FBD14AA32ED}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D51975EA-6BA1-4502-8FA3-2FBD14AA32ED}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D51975EA-6BA1-4502-8FA3-2FBD14AA32ED}.Release|Any CPU.Build.0 = Release|Any CPU
+		{88E48658-4D1E-41AE-AD4F-B75CD78B97CF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{88E48658-4D1E-41AE-AD4F-B75CD78B97CF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{88E48658-4D1E-41AE-AD4F-B75CD78B97CF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{88E48658-4D1E-41AE-AD4F-B75CD78B97CF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{87A12D4B-EF2F-4ADD-A84F-2EEE196EEBA7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{87A12D4B-EF2F-4ADD-A84F-2EEE196EEBA7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{87A12D4B-EF2F-4ADD-A84F-2EEE196EEBA7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{87A12D4B-EF2F-4ADD-A84F-2EEE196EEBA7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{33195C5A-BA98-4928-BD25-E784C5EC9473}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{33195C5A-BA98-4928-BD25-E784C5EC9473}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{33195C5A-BA98-4928-BD25-E784C5EC9473}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{33195C5A-BA98-4928-BD25-E784C5EC9473}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
