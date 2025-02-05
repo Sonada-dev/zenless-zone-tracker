@@ -12,16 +12,16 @@ public class GachaController(ILogger<GachaController> logger, IFetchGachaService
     [HttpPost("fetch")]
     public async Task<IActionResult> FetchGachaHistory([FromBody] FetchRequest request)
     {
-        if (string.IsNullOrWhiteSpace(request.GachaUrl) ||
-            !Uri.IsWellFormedUriString(request.GachaUrl, UriKind.Absolute))
+        if (string.IsNullOrWhiteSpace(request.Url) ||
+            !Uri.IsWellFormedUriString(request.Url, UriKind.Absolute))
         {
             logger.LogWarning("FetchGachaHistory: Empty or invalid URL received.");
             throw new ArgumentException("Invalid URL");
         }
 
-        logger.LogInformation("FetchGachaHistory: Received request with URL: {GachaUrl}", request.GachaUrl);
+        logger.LogInformation("FetchGachaHistory: Received request with URL: {GachaUrl}", request.Url);
 
-        var uri = new Uri(request.GachaUrl);
+        var uri = new Uri(request.Url);
         var queryParams = QueryHelpers.ParseQuery(uri.Query);
 
         logger.LogInformation("FetchGachaHistory: Parsed query parameters: {QueryParams}", queryParams);
@@ -32,7 +32,7 @@ public class GachaController(ILogger<GachaController> logger, IFetchGachaService
             var result = await fetchGachaService.FetchGachaHistoryAsync(request, queryParams);
 
             logger.LogInformation("FetchGachaHistory: Successfully fetched gacha history for URL: {GachaUrl}",
-                request.GachaUrl);
+                request.Url);
 
             return Ok(result);
         }

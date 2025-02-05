@@ -37,7 +37,7 @@ public class FetchGachaService(IGachaApi gachaApi, ILogger<FetchGachaService> lo
             foreach (var gachaType in Enum.GetValues<GachaType>())
             {
                 var allPulls = new List<GachaItem>();
-                var nextEndId = "0";
+                var nextEndId = request.EndId ?? "0";
 
                 do
                 {
